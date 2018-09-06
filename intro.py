@@ -5,7 +5,7 @@ from urllib import request
 sause = request.urlopen('https://pythonprogramming.net/parsememcparseface/').read()
 
 # Convert to BS object
-soup = bs.BeautifulSoup(sause)
+soup = bs.BeautifulSoup(sause,  'lxml')
 
 # Get some element like title
 print(soup.title)
