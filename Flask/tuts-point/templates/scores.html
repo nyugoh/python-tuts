@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scores</title>
+</head>
+<body>
+<table>
+    {% for sub, marks in scores.iteritems() %}
+    <tr>
+        <td>{{ sub }}</td>
+        <td>{{ marks }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
